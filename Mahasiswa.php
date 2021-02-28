@@ -1,21 +1,38 @@
 <?php
- 
-class Mahasiswa 
-{
-    public $nim;
-    public $nama;
-    public $tanggal_lahir;
-    public $jenis_kelamin;
+    require_once("User.php");
 
-    public function tampilkanAngkatan()
+    class Mahasiswa extends User
     {
-        echo " Nim $this->nim Nama $this->nama Tanggal lahir $this->tanggal_lahir Jenis kelamin $this->jenis_kelamin ";
-    }
+        public $nim;
+        public $nama;
+        public $tanggal_lahir;
+        public $jenis_kelamin;
 
-    public function tampilkanUmur()
-    {
+        //untuk menghemat baris
+        function __construct($nim, $nama, $tgl, $jk)
+        {
+            $this->nim = $nim;
+            $this->nama = $nama;
+            $this->tanggal_lahir = $tgl;
+            $this->jenis_kelamin = $jk;
+        }
+        public function tampilkanAngkatan()
+        {
+            $akt = substr($this->nim, 5, 2);
+            echo " Merupakan angkatan tahun 20" . $akt;
 
-        
+        }
+
+        public function tampilkanUmur()
+        {
+            $tgl_lahir = date_create($this->tanggal_lahir);
+            $umur = date_diff($tgl_lahir, date_create("today"))->y;
+            echo " Berusia " . $umur;
+        }
+
+        public function tampilkanNama()
+        {
+            echo $this->nama;
+        }
     }
-}
 ?>

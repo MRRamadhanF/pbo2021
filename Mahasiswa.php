@@ -3,10 +3,10 @@
 
     class Mahasiswa extends User
     {
-        public $nim;
-        public $nama;
-        public $tanggal_lahir;
-        public $jenis_kelamin;
+        protected $nim;
+        protected $nama;
+        protected $tanggal_lahir;
+        protected $jenis_kelamin;
 
         //untuk menghemat baris
         function __construct($nim, $nama, $tgl, $jk)
@@ -18,8 +18,7 @@
         }
         public function tampilkanAngkatan()
         {
-            $akt = substr($this->nim, 5, 2);
-            echo " Merupakan angkatan tahun 20" . $akt;
+            echo " Merupakan angkatan tahun 20" . substr($this->nim , 5,-4)."<br>";
 
         }
 
@@ -33,6 +32,32 @@
         public function tampilkanNama()
         {
             echo $this->nama;
+        }
+        // setter
+        public function setNama($nama){
+        $this->nama=$nama;
+        }
+        public function setNim($nim){
+            $this->nim=$nim;
+        }
+        public function setTanggalLahir($tanggal_lahir){
+            $this->tanggal_lahir=$tanggal_lahir;
+        }
+        public function setJanisKelamin($jenis_kelamin){
+            $this->jenis_kelamin=$jenis_kelamin;
+        }
+        // getter
+        public function getNama(){
+            return $this->nama;
+        }
+        public function getNim(){
+            return $this->nim;
+        }
+        public function getTanggalLahir(){
+            return $this->tanggal_lahir;
+        }
+        public function getJenisKelamin(){
+            return $this->jenis_kelamin;
         }
     }
 ?>

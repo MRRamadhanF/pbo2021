@@ -1,5 +1,7 @@
 <?php
 
+use application\backend\MyDate;
+
 require_once 'MyDate.php';
 
 $the_date = new MyDate();

@@ -1,16 +1,15 @@
 <?php
-    require_once("Mahasiswa.php");
-    require_once("MahasiswaBaru.php");
+require_once("initialize.php");
 
-    $rama = new Mahasiswa("H1101191029", "Muh Ridha Ramadhan Fatriendi", "2001-12-13", "Laki-laki");
+$rama = new Mahasiswa("H1101191029", "Muh Ridha Ramadhan Fatriendi", "2001-12-13", "Laki-laki");
 
-    $tegar = new Mahasiswa("H1101191071", "Tegar Ferdigantara", "2001-09-24", "Laki-laki");
+$tegar = new Mahasiswa("H1101191071", "Tegar Ferdigantara", "2001-09-24", "Laki-laki");
 
-    $bayu = new Mahasiswa("H1101191047", "Bayu Firmadi", "2001-10-18", "Laki-laki");
+$bayu = new Mahasiswa("H1101191047", "Bayu Firmadi", "2001-10-18", "Laki-laki");
 
-    $firman = new MahasiswaBaru("H1101201009", "Firmansyah Putra", "2002-08-04", "Laki-laki", 1342);
+$firman = new MahasiswaBaru("H1101201009", "Firmansyah Putra", "2002-08-04", "Laki-laki", 1342);
 
-    $meyliza = new MahasiswaBaru("H1101201042", "Meyliza Utari", "2002-05-27", "Perempuan", 1572);
+$meyliza = new MahasiswaBaru("H1101201042", "Meyliza Utari", "2002-05-27", "Perempuan", 1572);
 
 ?>
 

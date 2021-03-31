@@ -4,8 +4,9 @@
     {
         protected $_type = 'Book';
 
-        public function setProductType($type) {
-        $this->_type = $type;
+        public function setProductType($type) 
+        {
+            $this->_type = $type;
         }
 
         public function getProductType()

@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class Dosen extends Pegawai
 {
     protected $nidn;

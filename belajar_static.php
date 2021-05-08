@@ -12,4 +12,4 @@ $status_mahasiswa = Mahasiswa::NON_AKTIF;
 
 echo $status_mahasiswa.'<br/>';
 
-echo Mahasiswa::hitungSks();
+echo Mahasiswa::hitungSks(4, 2);

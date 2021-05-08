@@ -1,5 +1,7 @@
 <?php
-require_once("initialize.php");
+require_once("vendor/autoload.php");
+use App\Mahasiswa;
+use App\MahasiswaBaru;
 
 $rama = new Mahasiswa("H1101191029", "Muh Ridha Ramadhan Fatriendi", "2001-12-13", "Laki-laki");
 

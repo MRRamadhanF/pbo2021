@@ -1,16 +1,14 @@
 {
-    "name": "Muh ridha ramadhan fatriendi/pbo2021",
+    "name": "Ramadhan/pbo2021",
     "description": "Praktikum PBO",
-    "authors": [
-        {
-            "name": "Rama",
-            "email": "ramadhan13@student.untan.ac.id"
-        }
-    ],
+    "authors": [{
+        "name": "Rama",
+        "email": "ramadhan13@student.untan.ac.id"
+    }],
     "require": {},
     "autoload": {
         "psr-4": {
-            "App\\":"application"
+            "App\\": "application"
         }
     }
 }

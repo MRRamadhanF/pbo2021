@@ -1,8 +1,8 @@
 {
-    "name": "Ramadhan/pbo2021",
+    "name": "user/pbo2021",
     "description": "Praktikum PBO",
     "authors": [{
-        "name": "Rama",
+        "name": "Muh Ridha Ramadhan Fatriendi",
         "email": "ramadhan13@student.untan.ac.id"
     }],
     "require": {},

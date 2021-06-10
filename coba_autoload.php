@@ -11,4 +11,5 @@ $tgl->setDay(22);
 $tgl->setMonth(4);
 $tgl->setYear(2021);
 
+echo $tgl->getyear();
 echo $tanggal->penanggalan();
